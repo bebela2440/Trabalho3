@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Quimicando: Distribuição Eletrônica e Íons, descobrimento da composição de um átomo" />
+    <meta property="og:description " content="Aprendizado de Química e Curiosidades, introdução aos fundamentos dos números quânticos e imagens explicativas acerca de íons, átomos, eletrosfera e muito mais" />
+    <meta property="og:image" content="https://bebela2440.github.io/Trabalho3/img/quimicando.png" />
+    <meta property="og:url" content="https://bebela2440.github.io/Trabalho3/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Trabalho3" />
+    <meta property="og:image" content="https://bebela2440.github.io/Trabalho3/img/quimicando.png">
+    <meta property="og:image:secure_url" content="https://bebela2440.github.io/Trabalho3/img/quimicando.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="icon" type="image/x-icon" href="https://bebela2440.github.io/Trabalho3/img/quimicando.png">
+    <link rel="canonical" href="https://bebela2440.github.io/Trabalho3/" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+
+
+    <title>Trabalho 3, Quimicando Íons e Distribuiçao Eletrônica</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IM+Fell+Double+Pica:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+
+    <style>
+        .quadro {
+            width: 100%;
+            height: 300px;
+            border: 3px rgb(225, 186, 239) solid;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vidro {
+            width: 60px;
+            height: 60px;
+            background-image: url(img/erlenmeyer.webp);
+            background-size: cover;
+            position: relative;
+            left: 45vw;
+            top: 10vw;
+            animation-name: desloca;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes desloca {
+            0%   { transform: translate(0vw) scale(1); }
+            50%  { transform: translate(30vw) scale(2); }
+            100% { transform: translate(0vw) scale(1); }
+        }
+
+        .bolha{
+            border: 2px solid rgb(138, 85, 138);
+            border-radius: 50%;
+            position: absolute;
+            animation: sobe 3s ease-in infinite;
+        }
+        .bolha1 { width: 20px; height: 20px; left: 6vw; }
+        .bolha2 { width: 12px; height: 12px; left: 10vw; animation-delay: 1s; }
+        .bolha3 { width: 16px; height: 16px; left: 8vw;  animation-delay: 2s; }
+
+        @keyframes sobe {
+            0%   { bottom: 0;     opacity: 1; }
+            100% { bottom: 280px; opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="start">
+        <div class="logo">
+            <figure>
+                <img src="img/quimicando.png" alt=""/>
+            </figure>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <a href="#ion">Íons</a>
+        <a href="#linus">Distribuição Eletrônica</a>
+        <a href="#form">Formulário</a>
+        <a href="#gal">Galeria</a>
+        <a href="#me">Contato</a>
+    </nav>
+
+    <section class="text">
+        <p>Nessa página, serão abordados assuntos de Química relacionados a Estrutura Atômica
+        e Ligações Químicas, mais especificamente sobre <i>Íons, Cátions, Ânions e a Distribuição Eletrônica</i> e suas regras.</p>
+
+        <h1 id="ion">Íons</h1>
+        <p>Os íons são <b>espécies químicas eletricamente carregadas</b> resultantes de átomos que perderam ou receberam elétrons.
+        Os átomos são eletricamente neutros por possuírem iguais quantidades de partículas carregadas positivamente (prótons) e
+        negativamente (elétrons).<br>
+        Assim, o átomo neutro, ao receber elétrons adicionais, fica com excesso de carga negativa, formando um íon negativo, e,
+        se o átomo neutro perde seus elétrons originais, ficará com ausência dessas cargas, representada por uma carga numérica
+        positiva, originado um íon positivo.</p>
+
+        <h2>Cátions</h2>
+        <p>Os íons com <b>carga positiva</b> são denominados cátions e são formados por átomos eletricamente neutros que perderam elétrons.</p>
+
+        <h2>Ânions</h2>
+        <p>Os íons de <b>carga negativa</b> são denominados ânions e são derivados de átomos eletricamente neutros que receberam elétrons.</p>
+
+        <h1 id="linus">Distribuição eletrônica</h1>
+        <p>A distribuição eletrônica é a maneira como os elétrons, aquelas pequenas partículas carregadas negativamente que circulam
+        ao redor do núcleo de um átomo, ocupam diferentes espaços ao redor do núcleo. No entanto, essa organização não é aleatória,
+        segue regras específicas que nos ajudam a entender a química dos elementos.<br>
+        Além disso, a distribuição eletrônica funciona como uma ferramenta fundamental para explicar as propriedades periódicas dos
+        elementos na Tabela Periódica, como a tendência de se aumentarem a eletronegatividade e a afinidade eletrônica à medida que
+        se move da esquerda para a direita e de se diminuir a eletronegatividade ao descer-se nos grupos. Sem contar que é crucial
+        para compreender como os átomos formam ligações químicas e interagem para criar moléculas e compostos químicos.</p>
+
+        <h2>Camadas eletrônicas ou níveis de energia</h2>
+        <p>Os níveis de energia, também conhecidos como camadas eletrônicas, são como órbitas ou níveis de órbita ao redor do núcleo
+        de um átomo, onde os elétrons são encontrados. Sendo assim, cada átomo tem diferentes níveis de energia, numerados a partir
+        do núcleo e representados por números inteiros (1, 2, 3, 4 etc.). Às vezes, esses níveis de energia também são representados
+        pelas letras K, L, M, N, O, P, Q, correspondendo aos números 1, 2, 3, 4, 5, 6, 7 respectivamente.<br>
+        Outro conceito importante é o de camada de valência, a camada mais externa de um átomo e que contém os elétrons mais
+        energeticamente envolvidos em reações químicas. Dessa forma, ela determina as propriedades químicas do elemento.
+        Em resumo, cada camada tem um limite máximo de elétrons que pode conter:</p>
+
+        <ol>
+            <li>Camada K: até 2 elétrons</li>
+            <li>Camada L: até 8 elétrons</li>
+            <li>Camada M: até 18 elétrons</li>
+            <li>Camada N: até 32 elétrons</li>
+            <li>Camada O: até 32 elétrons</li>
+            <li>Camada P: até 18 elétrons</li>
+            <li>Camada Q: até 8 elétrons</li>
+        </ol>
+
+        <figure>
+            <img src="img/distribuicao.webp" alt="" loading="lazy">
+        </figure>
+
+        <h2>Como fazer a distribuição eletrônica?</h2>
+        <h3>Diagrama de Linus Pauling</h3>
+        <p>O diagrama de Linus Pauling é uma maneira visual de representar a distribuição eletrônica de um átomo. Ele organiza os
+        elétrons em níveis e subníveis de energia de forma simples e clara, funcionando como um mapa que nos ajuda a encontrar os
+        elétrons em um labirinto atômico. Para obedecer à ordem de preenchimento de cada nível e subnível, basta seguir o sentido
+        das setas no diagrama, conforme é mostrado na figura a seguir:</p>
+
+        <figure>
+            <img src="img/pauling.webp" alt="" loading="lazy">
+        </figure>
+    </section>
+
+    <a href="#start">Clique aqui para voltar ao menu</a>
+
+    <section>
+        <div class="pics">
+            <figure>
+                <img src="img/atomo.jpeg" alt="" loading="lazy">
+            </figure>
+            <figure>
+                <img src="img/atomo1.png" alt="" loading="lazy">
+            </figure>
+            <figure>
+                <img src="img/ion.webp" alt="" loading="lazy">
+            </figure>
+            <figure>
+                <img src="img/tabela.jpg" alt="" loading="lazy">
+            </figure>
+        </div>
+
+        <p>Fontes:<br>
+            https://brasilescola.uol.com.br/o-que-e/quimica/o-que-e-distribuicao-eletronica.htm<br>
+            https://brasilescola.uol.com.br/quimica/ions.htm
+        </p>
+    </section>
+
+    <a href="#start">Clique aqui para voltar ao menu</a>
+    <br>
+    <br>
+
+    <section>
+        <form method="post" action="recebe.php" id="form">
+            <div class="container">
+
+                <div class="gridimg">
+                    <figure>
+                        <img src="img/gridImg.jpg" alt="" loading="lazy"/>
+                    </figure>
+                </div>
+
+                <fieldset class="forms">
+                    <div class="n">
+                        <label for="n1">Nome:</label>
+                        <input type="text" name="nome" id="n1">
+                    </div> <!--nome-->
+                    <br>
+
+                    <div class="e">
+                        <label for="e1">Email</label>
+                        <input type="email" name="email" id="e1">
+                    </div> <!--email-->
+                    <br>
+
+                    <div class="i">
+                        <label for="i1">Idade</label>
+                        <input type="number" name="idade" id="i1">
+                    </div> <!--idade-->
+                    <br>
+
+                    <div class="t">
+                        <label for="t1">Telefone</label>
+                        <input type="tel" name="telefone" id="t1">
+                    </div> <!--telefone-->
+                    <br>
+
+                    <div class="b">
+                        <p>Deseja receber novidades?</p>
+                        <input type="radio" id="yes" name="novidade1" value="Sim">
+                        <label for="yes">Sim</label>
+                        <input type="radio" id="no" name="novidade2" value="Não">
+                        <label for="no">Não</label>
+                    </div> <!--radio novidades-->
+                </fieldset>
+
+            </div>
+            <input class="envio" type="submit" name="enviar" value="Enviar"><br>
+        </form>
+    </section>
+
+<section id="gal">
+<div class="galeria">
+    <div class="quadra1">
+        <figure>
+            <img src="img/bohr.jpg" alt="" loading="lazy">
+        </figure>
+    </div>
+
+    <div class="quadradao">
+        <figure>
+            <img src="img/dalton.jpg" alt="" loading="lazy">
+        </figure>
+    </div>
+
+    <div class="quadra2">
+        <figure>
+            <img src="img/rutherford.jpg" alt="" loading="lazy">
+        </figure>
+    </div>
+
+    <div class="rect">
+        <figure>
+            <img src="img/thomson.jpg" alt="" loading="lazy">
+        </figure>
+    </div>
+
+    <div class="quadra3">
+        <figure>
+            <img src="img/schrondinger.jpg" alt="" loading="lazy">
+        </figure>
+    </div>
+</div> 
+</section>
+
+    <footer id="me">
+        <p>
+            Desenvolvedora: Isabela Ferrarelli Cunha<br>
+            Curso: Informática para Internet<br>
+            Disciplina: Programação Web Front-End<br>
+            Professor da disciplina: Tiago Lopes Telecken<br>
+            Turma: I2-A<br>
+        </p>
+    </footer>
+
+        <div class="quadro">
+            <div class="vidro"></div>
+            <div class="bolha bolha1"></div>
+            <div class="bolha bolha2"></div>
+            <div class="bolha bolha3"></div>
+        </div>
+</body>
+</html>

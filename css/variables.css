@@ -1,0 +1,32 @@
+/* Variáveis CSS 
+As váriáveis armazenam valores que podem ser reutilizados 
+em todo o projeto. Ajudam a manter a consistência e 
+facilitam a manutenção do código.
+Esta estrutura pode ser reutilizada em outros projetos, 
+mas os valores são específicos para este projeto.
+*/
+
+
+body{
+  font-family: IM Fell Double Pica, serif;
+  background-color: rgb(225, 186, 239);
+  font-size: 16px;
+}
+
+  a{
+    color: rgb(81, 25, 133);
+  }
+  
+  h1{
+    text-align: center;
+    color: rgb(81, 25, 133);
+    text-decoration: underline;
+  }
+
+  h2{
+    color: black;
+  }
+  
+  h3{
+    color: rgb(81, 25, 133);
+  }
