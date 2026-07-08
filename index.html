@@ -17,16 +17,14 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <link rel="icon" type="image/x-icon" href="https://bebela2440.github.io/Trabalho3/img/quimicando.png">
-    <link rel="canonical" href="https://bebela2440.github.io/Trabalho3/" />
+    <link rel="canonical" href="https://bebela2440.github.io/trabalho3/" />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-
-
 
     <title>Trabalho 3, Quimicando Íons e Distribuiçao Eletrônica</title>
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IM+Fell+Double+Pica:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slabo+27px&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
 
@@ -39,7 +37,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .vidro {
             width: 60px;
             height: 60px;
@@ -53,13 +50,11 @@
             animation-iteration-count: infinite;
             animation-timing-function: linear;
         }
-
         @keyframes desloca {
             0%   { transform: translate(0vw) scale(1); }
             50%  { transform: translate(30vw) scale(2); }
             100% { transform: translate(0vw) scale(1); }
         }
-
         .bolha{
             border: 2px solid rgb(138, 85, 138);
             border-radius: 50%;
@@ -69,7 +64,6 @@
         .bolha1 { width: 20px; height: 20px; left: 6vw; }
         .bolha2 { width: 12px; height: 12px; left: 10vw; animation-delay: 1s; }
         .bolha3 { width: 16px; height: 16px; left: 8vw;  animation-delay: 2s; }
-
         @keyframes sobe {
             0%   { bottom: 0;     opacity: 1; }
             100% { bottom: 280px; opacity: 0; }
@@ -81,7 +75,7 @@
     <header id="start">
         <div class="logo">
             <figure>
-                <img src="img/quimicando.png" alt=""/>
+                <img src="img/quimicando.png" fetchpriority="high" loading="eager" alt=""/>
                   <figcaption></figcaption>
             </figure>
         </div>
@@ -204,34 +198,34 @@
 
                 <fieldset class="forms">
                     <div class="n">
-                        <label for="n1">Digite seu nome:</label>
-                        <input type="text" name="nome" id="n1">
+                        <label for="n1">Digite seu nome</label>
+                        <input type="text" name="nome" aria-label="Digite seu nome" id="n1">
                     </div> <!--nome-->
                     <br>
 
                     <div class="e">
                         <label for="e1">Digite seu email</label>
-                        <input type="email" name="email" id="e1">
+                        <input type="email" name="email" aria-label="Digite seu email" id="e1">
                     </div> <!--email-->
                     <br>
 
                     <div class="i">
                         <label for="i1">Digite sua idade</label>
-                        <input type="number" name="idade" id="i1">
+                        <input type="number" name="idade" aria-label="Digite sua idade" id="i1">
                     </div> <!--idade-->
                     <br>
 
                     <div class="t">
                         <label for="t1">Digite seu telefone</label>
-                        <input type="tel" name="telefone" id="t1">
+                        <input type="tel" name="telefone" aria-label="Digite seu telefone" id="t1">
                     </div> <!--telefone-->
                     <br>
 
                     <div class="b">
                         <p>Deseja receber novidades?</p>
-                        <input type="radio" id="yes" name="novidade1" value="Sim">
+                        <input type="radio" id="yes" name="novidade1" aria-label="Quero receber novidades" value="Sim">
                         <label for="yes">Quero receber novidades</label>
-                        <input type="radio" id="no" name="novidade2" value="Não">
+                        <input type="radio" id="no" name="novidade2" aria-label="Não quero receber novidades" value="Não">
                         <label for="no">Não quero receber novidades</label>
                     </div> <!--radio novidades-->
                 </fieldset>
