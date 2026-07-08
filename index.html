@@ -17,14 +17,16 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <link rel="icon" type="image/x-icon" href="https://bebela2440.github.io/Trabalho3/img/quimicando.png">
-    <link rel="canonical" href="https://bebela2440.github.io/trabalho3/" />
+    <link rel="canonical" href="https://bebela2440.github.io/Trabalho3/" />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+
 
     <title>Trabalho 3, Quimicando Íons e Distribuiçao Eletrônica</title>
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IM+Fell+Double+Pica:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slabo+27px&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
 
@@ -37,6 +39,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .vidro {
             width: 60px;
             height: 60px;
@@ -50,11 +53,13 @@
             animation-iteration-count: infinite;
             animation-timing-function: linear;
         }
+
         @keyframes desloca {
             0%   { transform: translate(0vw) scale(1); }
             50%  { transform: translate(30vw) scale(2); }
             100% { transform: translate(0vw) scale(1); }
         }
+
         .bolha{
             border: 2px solid rgb(138, 85, 138);
             border-radius: 50%;
@@ -64,6 +69,7 @@
         .bolha1 { width: 20px; height: 20px; left: 6vw; }
         .bolha2 { width: 12px; height: 12px; left: 10vw; animation-delay: 1s; }
         .bolha3 { width: 16px; height: 16px; left: 8vw;  animation-delay: 2s; }
+
         @keyframes sobe {
             0%   { bottom: 0;     opacity: 1; }
             100% { bottom: 280px; opacity: 0; }
@@ -75,7 +81,7 @@
     <header id="start">
         <div class="logo">
             <figure>
-                <img src="img/quimicando.png" fetchpriority="high" loading="eager" alt=""/>
+                <img src="img/quimicando.png" alt=""/>
                   <figcaption></figcaption>
             </figure>
         </div>
@@ -231,9 +237,11 @@
                 </fieldset>
 
             </div>
-            <input class="envio" type="submit" name="enviar" value="Enviar"><br>
+            <input class="envio" id="env" type="submit" name="enviar" aria-label="Enviar" value="Enviar"><br>
+            <label for="env"></label>
         </form>
     </section>
+
 
 <section id="gal">
 <div class="galeria">
@@ -292,3 +300,4 @@
         </div>
 </body>
 </html>
+
