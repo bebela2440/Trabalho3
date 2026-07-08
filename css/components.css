@@ -143,3 +143,8 @@ figure{text-align: center;}
         object-fit: cover;
     }
 }
+
+img{
+    width: auto;
+    height: auto;
+}
